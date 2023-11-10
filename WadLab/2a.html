@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>2a</title>
+  </head>
+
+  <body>
+    <input class="input" , placeholder="enter number" />
+    <button class="button">Sum</button>
+
+    <script>
+      const btn = document.querySelector(".button");
+
+      btn.addEventListener("click", func);
+
+      function func() {
+        value = document.querySelector(".input").value;
+        let sum = 0;
+
+        for (let i = 0; i <= value; i++) {
+          sum = sum + i;
+        }
+
+        alert("Sum is:" + sum);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>3</title>
+  </head>
+
+  <body>
+    <script>
+      const toDoList = [];
+
+      toDoList.push({ id: "a" });
+      toDoList.push({ id: "b" });
+      toDoList.push({ id: "c" });
+      toDoList.push({ id: "d" });
+      toDoList.push({ id: "e" });
+      console.log(toDoList);
+
+      const poppedItem = toDoList.pop();
+      console.log("Popped Item:", poppedItem);
+
+      const newArr = toDoList.filter(item);
+
+      function item(item) {
+        return item.id != "a";
+      }
+
+      console.log(newArr);
+    </script>
+  </body>
+</html>

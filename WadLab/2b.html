@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>2b</title>
+  </head>
+
+  <body>
+    <input type="text" class="a" placeholder="coeff a" />
+    <input type="text" class="b" placeholder="coeff b" />
+    <input type="text" class="c" placeholder="coeff c" />
+
+    <button class="button">Find Root</button>
+
+    <script>
+      const btn = document.querySelector(".button");
+
+      btn.addEventListener("click", func);
+
+      function func() {
+        const a = document.querySelector(".a").value;
+        const b = document.querySelector(".b").value;
+        const c = document.querySelector(".c").value;
+        const rootof = b * b - 4 * a * c;
+
+        let real1, real2, imag1, imag2;
+        if (rootof < 0) {
+          real1 = -b / (2 * a);
+          real2 = -b / (2 * a);
+          imag1 = Math.sqrt(rootof * -1) / (2 * a) + "i";
+          imag1 = Math.sqrt(rootof * -1) / (2 * a) + "i";
+
+          if (rootof > 0) {
+            real1 = -b + Math.sqrt(rootof) / (2 + a);
+            real2 = -b + Math.sqrt(rootof) / (2 * a);
+            imag1 = 0 + "i";
+            imag2 = 0 + "i";
+          }
+
+          document.write("Root1:" + real1 + "+" + imag1);
+          document.write("Root2:" + real2 + "+" + imag2);
+        }
+      }
+    </script>
+  </body>
+</html>
